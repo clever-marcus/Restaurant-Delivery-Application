@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+{% extends 'order/index.html' %}
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    {% block content %}
+    <section class="about">
+
+        <h3 class="sub-heading"> about us </h3>
+        <h1 class="heading"> why choose us? </h1>
+
+        <div class="row">
+            <div class="image">
+                <img src="{% static 'images/about-img.png' %}" alt="">
+            </div>
+
+            <div class="content">
+                <h3>Best food in town</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique impedit iusto cum, reiciendis
+                    nisi, atque asperiores quaerat eius, tempora perspiciatis natus temporibus quo debitis aut dolorum
+                    consequuntur voluptatibus nesciunt nam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam excepturi voluptatum aut, ex enim
+                    tempore eius. Nisi rerum cumque vel?</p>
+                <div class="icons-container">
+                    <div class="icons">
+                        <i class="fas fa-shipping-fast"></i>
+                        <span>free delivery</span>
+                    </div>
+                    <div class="icons">
+                        <i class="fas fa-dollar-sign"></i>
+                        <span>easy payments</span>
+                    </div>
+                    <div class="icons">
+                        <i class="fas fa-headset"></i>
+                        <span>24/7 service</span>
+                    </div>
+                </div>
+                <a href="#" class="btn">learn more</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    {% endblock content %}
+</body>
+
+</html>

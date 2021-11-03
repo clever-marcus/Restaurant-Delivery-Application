@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+{% extends 'order/index.html' %}
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    {% block content %}
+    <section class="review">
+        <h3 class="sub-heading"> customer's review </h3>
+        <h1 class="heading"> what they say </h1>
+
+        <div class="swiper-container review-slider">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="{% static 'images/pic-1.png' %}" alt="">
+
+                        <div class="user-info">
+                            <h3>stanley deluca</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident id deserunt eos vero
+                        temporibus consequuntur aliquid totam sit dignissimos, facere sint tempora corrupti suscipit
+                        aliquam perspiciatis dolorem iusto eum nesciunt.</p>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="{% static 'images/pic-2.png' %}" alt="">
+
+                        <div class="user-info">
+                            <h3>rebecca shark</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident id deserunt eos vero
+                        temporibus consequuntur aliquid totam sit dignissimos, facere sint tempora corrupti suscipit
+                        aliquam perspiciatis dolorem iusto eum nesciunt.</p>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="{% static 'images/pic-3.png' %}" alt="">
+
+                        <div class="user-info">
+                            <h3>jason harry</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident id deserunt eos vero
+                        temporibus consequuntur aliquid totam sit dignissimos, facere sint tempora corrupti suscipit
+                        aliquam perspiciatis dolorem iusto eum nesciunt.</p>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="{% static 'images/pic-4.png' %}" alt="">
+
+                        <div class="user-info">
+                            <h3>madyline seth</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident id deserunt eos vero
+                        temporibus consequuntur aliquid totam sit dignissimos, facere sint tempora corrupti suscipit
+                        aliquam perspiciatis dolorem iusto eum nesciunt.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    {% endblock content %}
+</body>
+
+</html>
